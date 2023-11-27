@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -567,8 +566,14 @@ body {
   display: flex;
   align-items: center;
 }
+.navbar__left-side {
+  margin-left: 21px;
+  margin-right: 19px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .navbar__logo {
-  margin-right: 100px;
   padding: 21px 0;
 }
 .navbar__item-link {
@@ -578,6 +583,13 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
+  padding: 5px 16px;
+  transition: all ease 0.4s;
+}
+.navbar__item-link:hover {
+  background-color: #1644BB;
+  padding: 5px 16px;
+  border-radius: 4px;
 }
 .navbar__search-form {
   position: absolute;
@@ -596,7 +608,7 @@ body {
 .navbar__item-auth {
   margin-left: 10px;
 }
-.navbar__item-auth + .navbar__item-auth, .navbar__item + .navbar__item {
+.navbar__item-auth + .navbar__item-auth {
   margin-left: 19px;
 }
 .navbar__item-auth:first-child {
@@ -788,7 +800,7 @@ body {
 .posts__label-wrapper,
 .box__content-inner {
   display: grid;
-  grid-template-columns: 355px 625px 286px;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
 }
 
 .posts__content-wrapper {
@@ -797,22 +809,16 @@ body {
   background-color: #0047FF;
 }
 
-.posts__content .box .label::after {
-  content: "+"; /* Задаем иконку "+" для элемента аккордеона */
-  position: absolute;
-  top: 50%; /* Выравнивание по центру */
-  transform: translateY(-50%);
-  right: 20px;
-  font-size: 25px;
-  font-weight: bold;
-}
-
 .posts__content .box.active {
   background-color: #0047FF;
 }
 
-.posts__content .box.active .label::after {
-  content: "—"; /* Меняем иконку на "-" при нажатии на элемент */
+.posts__content .box .content {
+  position: relative;
+  background-color: #0047FF;
+  overflow: hidden;
+  max-height: 0;
+  transition: all ease 0.4s;
 }
 
 .posts__content-text--wrapper {

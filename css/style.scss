@@ -23,8 +23,14 @@
     display: flex;
     align-items: center;
   }
+  &__left-side{
+    margin-left: 21px;
+    margin-right: 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   &__logo{
-    margin-right: 100px;
     padding: 21px 0;
   }
   &__item-link{
@@ -34,6 +40,13 @@
     font-style: normal;
     font-weight: 400;
     line-height: 120%;
+    padding: 5px 16px;
+    transition: all ease .4s;
+  }
+  &__item-link:hover{
+    background-color: #1644BB;
+    padding: 5px 16px;
+    border-radius: 4px;
   }
   &__search-form{
     position: absolute;
@@ -52,8 +65,7 @@
   &__item-auth{
     margin-left: 10px;
   }
-  &__item-auth + .navbar__item-auth,
-  &__item + .navbar__item{
+  &__item-auth + .navbar__item-auth{
     margin-left: 19px;
   }
   &__item-auth:first-child{
@@ -233,7 +245,7 @@
 .posts__label-wrapper,
   .box__content-inner{
   display: grid;
-  grid-template-columns: 355px 625px 286px;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
 }
 .posts__content-wrapper{
   padding-top: 20px;
@@ -241,30 +253,20 @@
   background-color: #0047FF;
 }
 
-
-.posts__content .box .label::after {
-  content: "+"; /* Задаем иконку "+" для элемента аккордеона */
-  position: absolute;
-  top: 50%; /* Выравнивание по центру */
-  transform: translateY(-50%);
-  right: 20px;
-  font-size: 25px;
-  font-weight: bold;
-}
 .posts__content .box.active{
   background-color: #0047FF; 
 }
-.posts__content .box.active .label::after {
-  content: "\2014"; /* Меняем иконку на "-" при нажатии на элемент */
-}
-
-// .posts__content .box .content {
-//   position: relative;
-//   background-color: #fff; /* Цвет фона контента */
-//   overflow: hidden;
-//   max-height: 0; /* Скрываем контент */
-//   transition: 0.3s; /* Для плавности анимации */
+// .posts__content .box.active .label::after {
+//   content: "\2014"; /* Меняем иконку на "-" при нажатии на элемент */
 // }
+
+.posts__content .box .content {
+  position: relative;
+  background-color: #0047FF;
+  overflow: hidden;
+  max-height: 0;
+  transition: all ease 0.4s;
+}
 
 // .posts__content .box .content p {
 //   padding: 20px;

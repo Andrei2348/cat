@@ -1,26 +1,22 @@
-const boxes = Array.from(document.querySelectorAll('.open'));
-
-boxes.forEach((box) => {box.addEventListener("click", boxHandler)});
-
-function boxHandler(e) {
-  e.preventDefault();
-  boxes.forEach((box) => {box.classList.remove('active')});
-
-  // let currentBox = e.target.closest(".box");
-  // console.log(currentBox)
+const boxes = Array.from(document.querySelectorAll('.box'));
+const contents = Array.from(document.querySelectorAll('.content'));
+const labels = Array.from(document.querySelectorAll('.posts__label'));
 
 
+function openContent(){
+  labels.forEach((eachElement, index) => 
+    eachElement.addEventListener('click', function(event){
+    event.preventDefault();
+    if(labels[index].classList.contains('active')){
+      contents[index].style.maxHeight = 0;
+      labels[index].classList.remove('active');
+    } else {
+      contents.forEach((content) => {content.style.maxHeight = 0});
+      labels.forEach((label) => {label.classList.remove('active')});
+      contents[index].style.maxHeight = contents[index].scrollHeight + "px";
+      labels[index].classList.add('active');
+    }
+  })
+)}
 
-
-  let currentContent = e.target.nextElementSibling;
-  console.log(currentContent)
-  currentContent.style.maxHeight = currentContent.scrollHeight + "px";
-
-
-  // currentBox.classList.toggle("active");
-  // if (currentBox.classList.contains("active")) {
-  //   currentContent.style.maxHeight = currentContent.scrollHeight + "px";
-  // } else {
-  //   currentContent.style.maxHeight = 0;
-  // }
-}
+window.addEventListener('DOMContentLoaded', openContent());

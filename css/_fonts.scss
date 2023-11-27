@@ -1,2 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700&display=swap');
+@font-face {
+  font-family: 'Gilroy';
+  src: url('Gilroy-Regular.eot');
+  src: local('Gilroy Regular'), local('Gilroy-Regular'),
+      url('../font/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../font/Gilroy-Regular.woff2') format('woff2'),
+      url('../font/Gilroy-Regular.woff') format('woff'),
+      url('../font/Gilroy-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'Gilroy';
+  src: url('Gilroy-Bold.eot');
+  src: local('Gilroy Bold'), local('Gilroy-Bold'),
+      url('../font/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../font/Gilroy-Bold.woff2') format('woff2'),
+      url('../font/Gilroy-Bold.woff') format('woff'),
+      url('../font/Gilroy-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}

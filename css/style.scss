@@ -253,6 +253,9 @@
   display: grid;
   grid-template-columns: 1fr 2fr 1fr 1fr;
 }
+.box:nth-child(even){
+  background-color: #F2F6FF;
+}
 .posts__content-wrapper{
   padding-top: 20px;
   padding-bottom: 74px;
@@ -338,7 +341,6 @@ p.posts__content-text{
   align-items: center;
   margin-right: 48px;
 }
-
 
 
 

@@ -811,6 +811,10 @@ body {
   grid-template-columns: 1fr 2fr 1fr 1fr;
 }
 
+.box:nth-child(even) {
+  background-color: #F2F6FF;
+}
+
 .posts__content-wrapper {
   padding-top: 20px;
   padding-bottom: 74px;

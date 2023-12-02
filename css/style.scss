@@ -308,13 +308,7 @@
     align-items: center;
     margin-right: 48px;
   }
-  &__watch{
-    margin-bottom: 30px;
-    color: #000;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 120%; 
-  }
+  
   &__box:nth-child(even){
     background-color: #F2F6FF;
   }
@@ -398,8 +392,72 @@
   &__item-button:hover{
     background-color: #1644BB;
   }
-
 }
+
+.profiles{
+  margin-bottom: 120px;
+  &__posts-watch{
+    margin-bottom: 30px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%; 
+  }
+  &__box{
+    background-color: #F2F6FF;
+    padding: 24px 0;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+  &__box-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__box-title{
+    color: #000;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 120%;
+    margin-bottom: 10px;
+  }
+  &__box-text,
+  &__bottom-tag{
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+  }
+  &__button{
+    margin-right: 95px;
+    border-radius: 4px;
+    background: #1A50DD;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+    padding: 10px 20px;
+  }
+  &__bottom-tags{
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+    margin-left: 35px;
+  }
+  &__bottom--links{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  &__box-image img{
+    margin-left: 20px;
+  }
+  &__box + .profiles__box{
+    margin-top: 40px;
+  }
+}
+
+
 
 
 .footer{

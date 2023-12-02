@@ -970,11 +970,100 @@ body {
   align-items: flex-end;
   justify-content: space-between;
 }
+.profiles__box-image {
+  display: inline-block;
+}
 .profiles__box-image img {
   margin-left: 20px;
 }
 .profiles__box + .profiles__box {
   margin-top: 40px;
+}
+.profiles__active-content {
+  display: none;
+}
+
+.profiles__box.active {
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+}
+.profiles__box.active .profiles__box-image {
+  display: none;
+}
+.profiles__box.active .profiles__box-title {
+  color: #282828;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 120%;
+}
+.profiles__box.active .profiles__box-text {
+  width: 620px;
+}
+.profiles__box.active .profiles__box-content--inner {
+  margin-bottom: 60px;
+}
+.profiles__box.active .profiles__bottom--links {
+  display: none;
+}
+.profiles__box.active .profiles__active-content {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.profiles__box.active .profiles__active-inner {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.profiles__box.active .profiles__active-gallery {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.profiles__box.active .profiles__active-info--title {
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 10px;
+}
+.profiles__box.active .profiles__active-info--subtitle {
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 120%;
+  margin-bottom: 10px;
+}
+.profiles__box.active .profiles__active-info--text {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+  max-width: 380px;
+  margin-bottom: 40px;
+}
+.profiles__box.active .profiles__images-gallery {
+  display: flex;
+  justify-content: flex-end;
+  gap: 11px;
+  margin-right: 9px;
+  margin-bottom: 90px;
+}
+.profiles__box.active .profiles__images-item {
+  display: inline-block;
+}
+.profiles__box.active .profiles__images-item img {
+  width: 120px;
+  height: 111px;
+  margin: 0;
+}
+.profiles__box.active .profiles__active-image {
+  display: inline-block;
+  margin-bottom: 40px;
+}
+.profiles__box.active .profiles__active-image img {
+  width: 165px;
+  height: 153px;
 }
 
 .categories__title {

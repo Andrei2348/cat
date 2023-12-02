@@ -319,7 +319,7 @@
   }
 }
 
-.profiles{
+.article{
   margin-bottom: 120px;
   &__posts-watch{
     margin-bottom: 30px;
@@ -390,7 +390,7 @@
   &__box-image img{
     margin-left: 20px;
   }
-  &__box + .profiles__box{
+  &__box + .article__box{
     margin-top: 40px;
   }
   &__active-content{
@@ -398,57 +398,57 @@
   }
 }
 
-.profiles__box.active{
+.article__box.active{
   background-color: #FFF;
   display: flex;
   flex-direction: column;
-  .profiles__box-image{
+  .article__box-image{
     display: none;
   }
-  .profiles__box-title{
+  .article__box-title{
     color: #282828;
     font-size: 40px;
     font-weight: 700;
     line-height: 120%;
   }
-  .profiles__box-text{
+  .article__box-text{
     width: 620px;
   }
-  .profiles__box-content--inner{
+  .article__box-content--inner{
     margin-bottom: 60px;
   }
-  .profiles__bottom--links{
+  .article__bottom--links{
     display: none;
   }
-  .profiles__active-content{
+  .article__active-content{
     display: grid;
     grid-template-columns: 1fr 3fr;
   }
-  .profiles__active-inner{
+  .article__active-inner{
     grid-column-start: 2;
     grid-column-end: 3;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .profiles__active-gallery{
+  .article__active-gallery{
     grid-column-start: 2;
     grid-column-end: 3;
   }
-  .profiles__active-info--title{
+  .article__active-info--title{
     color: #000;
     font-size: 24px;
     font-weight: 700;
     line-height: 120%;
     margin-bottom: 10px;
   }
-  .profiles__active-info--subtitle{
+  .article__active-info--subtitle{
     color: #000;
     font-size: 20px;
     font-weight: 500;
     line-height: 120%;
     margin-bottom: 10px;
   }
-  .profiles__active-info--text{
+  .article__active-info--text{
     color: #000;
     font-size: 16px;
     font-weight: 400;
@@ -456,26 +456,26 @@
     max-width: 380px;
     margin-bottom: 40px;
   }
-  .profiles__images-gallery{
+  .article__images-gallery{
     display: flex;
     justify-content: flex-end;
     gap: 11px;
     margin-right: 9px;
     margin-bottom: 90px;
   }
-  .profiles__images-item{
+  .article__images-item{
     display: inline-block;
   }
-  .profiles__images-item img{
+  .article__images-item img{
     width: 120px;
     height: 111px;
     margin: 0;
   }
-  .profiles__active-image{
+  .article__active-image{
     display: inline-block;
     margin-bottom: 40px;
   }
-  .profiles__active-image img{
+  .article__active-image img{
     width: 165px;
     height: 153px;
   }

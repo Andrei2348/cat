@@ -617,6 +617,10 @@ body {
 .navbar__logo {
   padding: 21px 0;
 }
+.navbar__item {
+  position: relative;
+  transition: all ease-in-out 0.4s;
+}
 .navbar__item-link {
   color: #FFF;
   font-size: 18px;
@@ -685,6 +689,37 @@ body {
   top: 60%;
   left: 4px;
   transform: translateY(-50%);
+}
+.navbar__item:hover > .navbar__items-submenu {
+  transform: rotateX(0deg);
+  opacity: 1;
+  visibility: visible;
+}
+.navbar__items-submenu {
+  position: absolute;
+  margin-top: 10px;
+  left: 0;
+  background-color: #FFF;
+  padding: 11px 70px 11px 20px;
+  border-radius: 4px;
+  transform: rotateX(90deg);
+  transform-origin: top;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease-in-out;
+}
+.navbar__item-submenu {
+  margin-bottom: 10px;
+}
+.navbar__item-submenu a {
+  color: #282828;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 120%;
+  transition: all ease-in-out 0.4s;
+}
+.navbar__item-submenu:hover a {
+  color: #000;
 }
 
 .main__page {
@@ -834,6 +869,9 @@ body {
 .posts__triangle-image {
   transition: all ease-in-out 0.6s;
 }
+.posts__triangle-image path {
+  transition: all ease-in-out 0.6s;
+}
 .posts__label.active {
   background-color: #0047FF;
 }
@@ -845,6 +883,9 @@ body {
 }
 .posts__label.active .posts__triangle-image {
   transform: rotate(210deg);
+}
+.posts__label.active .posts__triangle-image path {
+  fill: #fff;
 }
 .posts__content .box .content {
   position: relative;

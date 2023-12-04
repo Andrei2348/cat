@@ -8,48 +8,56 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+  
   <header class="navbar">
     <div class="container">
-      <div class="navbar__wrapper">
+      <div class="navbar__inner">
+        <a class="navbar__logo" href="#"><img class="navbar__logo-img" src="./images/icons/SVGRepo_iconCarrier.png" alt="Логотип"></a>
 
-        <div class="navbar__left-side">
-          <a class="navbar__logo" href="#"><img class="navbar__logo-img" src="./images/icons/SVGRepo_iconCarrier.png" alt="Логотип"></a>
-          <ul class="navbar__items">
-            <li class="navbar__item">
-              <a class="navbar__item-link" href="#">Категории</a>
-              <ul class="navbar__items-submenu">
-                <li class="navbar__item-submenu"><a href="#">Python</a></li>
-                <li class="navbar__item-submenu"><a href="#">Django</a></li>
-                <li class="navbar__item-submenu"><a href="#">AIOgram</a></li>
-                <li class="navbar__item-submenu"><a href="#">Docker</a></li>
-                <li class="navbar__item-submenu"><a href="#">Linux</a></li>
-                <li class="navbar__item-submenu"><a href="#">Bootstrap</a></li>
-                <li class="navbar__item-submenu"><a href="#">HTML+CSS</a></li>
-                <li class="navbar__item-submenu"><a href="#">JavaScript</a></li>
-              </ul>
+        <div class="navbar__burger-wrapper">
+            <div class="navbar__line"></div>
+        </div>
+
+        <div class="navbar__wrapper">
+          <div class="navbar__social">Тут будут иконки на соц сети</div>
+          <div class="navbar__left-side">
+            <ul class="navbar__items">
+              <li class="navbar__item">
+                <a class="navbar__item-link" href="#">Категории</a>
+                <ul class="navbar__items-submenu">
+                  <li class="navbar__item-submenu"><a href="#">Python</a></li>
+                  <li class="navbar__item-submenu"><a href="#">Django</a></li>
+                  <li class="navbar__item-submenu"><a href="#">AIOgram</a></li>
+                  <li class="navbar__item-submenu"><a href="#">Docker</a></li>
+                  <li class="navbar__item-submenu"><a href="#">Linux</a></li>
+                  <li class="navbar__item-submenu"><a href="#">Bootstrap</a></li>
+                  <li class="navbar__item-submenu"><a href="#">HTML+CSS</a></li>
+                  <li class="navbar__item-submenu"><a href="#">JavaScript</a></li>
+                </ul>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__item-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="navbar__search-form--wrapper">
+            <form class="navbar__search-form">
+              <button class="navbar__search-button"><img src="./images/icons/search_button.png" alt=""></button>
+              <input class="navbar__search-input" type="text">
+            </form>
+          </div>
+  
+          <ul class="navbar__items-auth">
+            <li class="navbar__item-auth">
+              <a class="navbar__item-link" href="#">Войти</a>
             </li>
-            <li class="navbar__item">
-              <a class="navbar__item-link" href="#">Контакты</a>
+            <li class="navbar__item-auth">
+              <a class="navbar__item-link" href="#">Зарегестрироваться</a>
             </li>
           </ul>
+          
         </div>
-        
-        <div class="navbar__search-form--wrapper">
-          <form class="navbar__search-form">
-            <button class="navbar__search-button"><img src="./images/icons/search_button.png" alt=""></button>
-            <input class="navbar__search-input" type="text">
-          </form>
-        </div>
-
-        <ul class="navbar__items-auth">
-          <li class="navbar__item-auth">
-            <a class="navbar__item-link" href="#">Войти</a>
-          </li>
-          <li class="navbar__item-auth">
-            <a class="navbar__item-link" href="#">Зарегестрироваться</a>
-          </li>
-        </ul>
-        
       </div>
 
     </div>
@@ -385,8 +393,6 @@
           </div>
         </div>
 
- 
-    
   </section>
 
   <section class="article">
@@ -413,7 +419,6 @@
               <a class="article__button" href="#">Перейти</a>
             </div>
 
-            <!-- Скрытый контент (появляется с наибольшим количеством просмотров) -->
             <div class="article__active-content">
               <div class="article__active-inner">
 
@@ -465,7 +470,6 @@
               <a class="article__button" href="#">Перейти</a>
             </div>
 
-            <!-- Скрытый контент (появляется с наибольшим количеством просмотров) -->
             <div class="article__active-content">
               <div class="article__active-inner">
 
@@ -517,7 +521,6 @@
               <a class="article__button" href="#">Перейти</a>
             </div>
 
-            <!-- Скрытый контент (появляется с наибольшим количеством просмотров) -->
             <div class="article__active-content">
               <div class="article__active-inner">
 
@@ -569,7 +572,6 @@
               <a class="article__button" href="#">Перейти</a>
             </div>
 
-            <!-- Скрытый контент (появляется с наибольшим количеством просмотров) -->
             <div class="article__active-content">
               <div class="article__active-inner">
 
@@ -621,7 +623,6 @@
               <a class="article__button" href="#">Перейти</a>
             </div>
 
-            <!-- Скрытый контент (появляется с наибольшим количеством просмотров) -->
             <div class="article__active-content">
               <div class="article__active-inner">
 
@@ -653,8 +654,6 @@
             </div>
           </div>
         </div>
-
-        
 
       </div>
     </div>
@@ -729,7 +728,7 @@
     </div>
   </section>
 
-  <footer class="footer">
+ <footer class="footer">
     <div class="container">
 
       <div class="footer__wrapper">
@@ -824,9 +823,11 @@
       </div>
     </div>
   </footer>
+
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="./js/main.js"></script>
+  <script src="./js/navbar.js"></script>
   <script src="./js/slick.js"></script>
 </body>
 </html>

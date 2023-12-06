@@ -594,9 +594,11 @@
     height: 100%;
   }
   &__items{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    // display: flex;
+    // justify-content: space-between;
+    // flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
   }
   &__item{
     max-width: 217px;

@@ -1189,9 +1189,8 @@ body {
   height: 100%;
 }
 .categories__items {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
 }
 .categories__item {
   max-width: 217px;

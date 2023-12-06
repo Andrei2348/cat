@@ -4,18 +4,6 @@
   }
 }
 
-@media(max-width: 1460px){
-  .navbar__wrapper{
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  .navbar__search-form--wrapper{
-    border: none;
-  }
-  .main__page-title--wrapper,
-  .main__page-title--wrapper::after{
-    border: none;
-  }
-}
 
 @media(max-width: 1366px){
   .main__page-wrapper{

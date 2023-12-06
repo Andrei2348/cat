@@ -16,16 +16,7 @@ function navbarContent(){
       document.body.style.overflow = '';
     };
   });
-  
-  document.addEventListener('scroll', () => {
-    var scroll_position = window.scrollY;
-    if (scroll_position > 50) {
-      header.style.backgroundColor = '#29323c';
-    } else {
-      header.style.backgroundColor = 'transparent';
-    }
-  });
-  
+    
   mobile__item.forEach(item=>{
     item.addEventListener('click', ()=>{
       if(burger.classList.contains('active') & mobile__menu.classList.contains('active')){

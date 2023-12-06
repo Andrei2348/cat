@@ -1,6 +1,15 @@
 const boxes = Array.from(document.querySelectorAll('.box'));
 const contents = Array.from(document.querySelectorAll('.content'));
 const labels = Array.from(document.querySelectorAll('.posts__label'));
+const categoriesCards = Array.from(document.querySelectorAll('.categories__item'));
+let heightArray = [];
+
+
+function setCategoriesHeight(){
+  categoriesCards.forEach((eachElement) => heightArray.push(eachElement.offsetHeight));
+  let maxHeight = Math.max.apply(null, heightArray);
+  categoriesCards.forEach((eachElement) => eachElement.style.height = maxHeight + "px");
+}
 
 
 function openContent(){
@@ -19,4 +28,9 @@ function openContent(){
   })
 )}
 
-window.addEventListener('DOMContentLoaded', openContent());
+window.addEventListener('DOMContentLoaded', startJS());
+
+function startJS(){
+  setCategoriesHeight();
+  openContent();
+}

@@ -5,7 +5,7 @@
 
 
 .navbar{
-  background-color: #1A50DD;
+  background: linear-gradient(107deg, #2753C6 -0.63%, #593EFF 100.55%);
   border-bottom: 1px solid #ffffff50;
   position: fixed;
   top: 0;
@@ -284,9 +284,6 @@
   &__content .box:first-child .label{
     border-top: 1px solid #E7E7E7;
   }
-  // &__content{
-  //   margin-bottom: 120px;
-  // }
   &__title{
     color: #0047FF;
     font-size: 24px;
@@ -643,9 +640,13 @@
     display: block;
     padding: 5px 0;
     white-space: nowrap;
+    transition: all ease-in-out 0.4s;
   }
   &__item-link:last-child{
     margin-bottom: 15px;
+  }
+  &__item-link:hover{
+    color: #282828;
   }
   &__item-button{
     color: #1A50DD;

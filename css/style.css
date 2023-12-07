@@ -1167,9 +1167,12 @@ body {
   padding-bottom: 40px;
   padding-right: 10px;
 }
+.article__box.active .article__active-info--text span {
+  color: #0047FF;
+}
 .article__box.active .article__images-gallery {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   gap: 11px;
   margin-right: 9px;
 }

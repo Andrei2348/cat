@@ -96,7 +96,7 @@
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.17);
     background: rgba(255, 255, 255, 0.15);
-    width: 271px;
+    width: 485px;
     position: relative;
     font-size: 18px;
     color: #FFF;
@@ -199,12 +199,14 @@
 }
 
 .main__page{
-  background-color: #F2F6FF;
   position: relative;
-  overflow: hidden;
-  margin-bottom: 120px;
-  padding-top: 180px;
-  padding-bottom: 100px;
+  margin-bottom: 100px;
+  padding-top: 230px;
+  
+}
+.main__page-bcg{
+  position: absolute;
+  top: 104px;
 }
 .main__page-wrapper{
   width: 100%;
@@ -215,29 +217,35 @@
   z-index: 6;
 }
 .main__page-title{
-  color: #282828;
-  @include adaptiv-font(96, 56);
+  
+  @include adaptiv-font(48, 38);
   font-weight: 700;
   white-space: nowrap;
+  color: #2D5E8B;
+  font-weight: 700;
 }
 .main__page-content{
   width: 520px;
   margin-top: 30px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
 }
 .main__page-text{
-  color: #282828;
-  font-size: 16px;
+  color: #080809;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 120%;
+  line-height: 150%;
 }
 .main__page-image{
   position: absolute;
   right: 0;
-  bottom: -110px;
+  bottom: -320px;
 }
 
 .posts{
-  margin-bottom: 120px;
+  margin-bottom: 100px;
   &__title{
     color: #0047FF;
     font-size: 24px;
@@ -259,10 +267,11 @@
     border-top: 1px solid #E7E7E7;
   }
   &__title{
-    color: #0047FF;
+    color: #1A50DD;
+    padding-left: 20px;
     font-size: 24px;
     font-weight: 600;
-    line-height: 120%;
+    line-height: 120%; 
   }
   &__label-title{
     color: #282828;
@@ -325,25 +334,15 @@
   &__label{
     transition: all ease-in-out 0.7s;
   }
-  &__triangle-image{
-    transition: all ease-in-out 0.6s;
-    path{
-      transition: all ease-in-out 0.6s;
-    }
-  }
   &__label.active{
     background-color: #F2F6FF; 
   }
-  &__label.active .posts__label-title,
-  &__label.active .posts__label-subtitle,
-  &__label.active .posts__info-items{
-    color: #282828;
-  }
   &__label.active{
-    border-bottom: 1px solid #F2F6FF;
+    height: 0;
+    display: none;
   }
-  &__label.active .posts__triangle-image {
-    transform: rotate(210deg);
+  &__info-close--button{
+    margin-left: auto;
   }
   &__content .box .content {
     position: relative;
@@ -373,18 +372,17 @@
     padding-left: 5px;
     padding-right: 5px;
     display: flex;
-    gap: 4px;
+    gap: 5px;
     flex-wrap: wrap;
   }
   &__contents-button{
     color: #fff;
-    border-radius: 10px;
     background: #1A50DD;
     font-size: 9px;
     font-style: normal;
     font-weight: 500;
     line-height: 1;
-    padding: 7px 6px 6px;
+    padding: 6px;
     white-space: nowrap;
   }
   &__content-link{

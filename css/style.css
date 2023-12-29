@@ -781,50 +781,28 @@ body {
 }
 
 .main__page {
-  background-color: #1A50DD;
-  height: 100vh;
+  background-color: #F2F6FF;
   position: relative;
   overflow: hidden;
   margin-bottom: 120px;
+  padding-top: 180px;
+  padding-bottom: 100px;
 }
 
 .main__page-wrapper {
-  position: relative;
-  height: 100vh;
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 800px 1fr;
 }
 
 .main__page-title--wrapper {
-  position: absolute;
-  max-width: 800px;
   width: 100%;
   height: 100%;
-  top: 50%;
-  left: 50%;
   z-index: 6;
-  transform: translate(-50%, -50%);
-  grid-column-start: 2;
-  grid-column-end: 3;
-}
-
-.main__page-bcg,
-.main__page-title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
 }
 
 .main__page-title {
-  padding: 0 10px;
-  color: #F8F8F8;
+  color: #282828;
   font-weight: 700;
-  z-index: 5;
   white-space: nowrap;
-  top: 52%;
 }
 @media (max-width: 767px) {
   .main__page-title {
@@ -838,17 +816,12 @@ body {
 }
 
 .main__page-content {
-  width: 360px;
-  display: flex;
-  align-items: end;
-  grid-column-start: 3;
-  grid-column-end: 4;
-  margin-left: 10px;
-  padding-bottom: 57px;
+  width: 520px;
+  margin-top: 30px;
 }
 
 .main__page-text {
-  color: #F8F8F8;
+  color: #282828;
   font-size: 16px;
   font-weight: 400;
   line-height: 120%;
@@ -907,10 +880,35 @@ body {
   font-size: 14px;
   font-weight: 500;
   line-height: 120%;
-}
-.posts__info-items {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
+}
+.posts__info-item {
+  position: relative;
+  padding-right: 10px;
+  white-space: nowrap;
+}
+.posts__info-item::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  background-color: #282828;
+  right: 0;
+  top: 0;
+}
+.posts__info-item:last-child::after {
+  display: none;
+}
+.posts__info-author {
+  text-align: end;
+}
+.posts__info-date {
+  text-align: center;
+}
+.postsposts__info-viewing {
+  text-align: start;
 }
 .posts__label-wrapper,
 .posts .box__content-inner {
@@ -981,8 +979,8 @@ body {
   font-size: 9px;
   font-style: normal;
   font-weight: 500;
-  line-height: 100%;
-  padding: 7px 6px 3px;
+  line-height: 1;
+  padding: 7px 6px 6px;
   white-space: nowrap;
 }
 .posts__content-link {
@@ -1209,7 +1207,7 @@ body {
 }
 .categories__items {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 10px;
 }
@@ -1246,7 +1244,7 @@ body {
   flex-grow: 1;
 }
 .categories__item-link {
-  color: #8E8E8E;
+  color: #909090;
   font-size: 14px;
   font-weight: 400;
   line-height: 120%;
@@ -1259,7 +1257,7 @@ body {
   margin-bottom: 15px;
 }
 .categories__item-link:hover {
-  color: #282828;
+  color: #4D647A;
 }
 .categories__item-button {
   color: #1A50DD;

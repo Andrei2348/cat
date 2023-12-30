@@ -628,11 +628,14 @@ body {
 }
 .navbar__item-link {
   color: #FFF;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 120%;
   padding: 5px 16px;
   transition: all ease 0.4s;
+}
+.navbar__item-link:last-child {
+  padding-right: 0;
 }
 .navbar__item-link:hover {
   background-color: #1644BB;
@@ -682,7 +685,7 @@ body {
   background: rgba(255, 255, 255, 0.15);
   width: 485px;
   position: relative;
-  font-size: 18px;
+  font-size: 16px;
   color: #FFF;
   outline: 0;
 }
@@ -837,7 +840,7 @@ body {
 .main__page-image {
   position: absolute;
   right: 0;
-  bottom: -320px;
+  top: 3px;
 }
 
 .posts {
@@ -1255,9 +1258,8 @@ body {
 }
 .categories__item {
   width: 100%;
-  border-radius: 10px;
   background-color: #fff;
-  box-shadow: 0px 7px 7px 0px rgba(192, 192, 192, 0.5);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
   transition: all ease-in-out 0.4s;
   min-height: 250px;
 }

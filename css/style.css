@@ -723,7 +723,7 @@ body {
 }
 .navbar__item-submenu a {
   color: #282828;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 120%;
   white-space: nowrap;
@@ -1294,7 +1294,7 @@ body {
 }
 .categories__items {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   min-height: 100%;
